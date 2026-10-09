@@ -7,7 +7,8 @@
   <title>Han Wang | The New School</title>
 
   <meta name="description" content="Han Wang conducts research at the New School for Social Research (NSSR), exploring transdisciplinary connections between economics and anthropology and heterodox approaches to social research.">
-  <meta name="theme-color" content="#15283b">
+  <meta name="theme-color" content="#e82e21">
+
   <meta property="og:title" content="Han Wang | The New School">
   <meta property="og:description" content="Research at NSSR on transdisciplinary connections between economics and anthropology, with a particular interest in heterodox approaches to social research.">
   <meta property="og:type" content="website">
@@ -15,14 +16,43 @@
 
   <link rel="canonical" href="https://hanwang114-droid.github.io/">
 
+  <meta name="robots" content="max-image-preview:large">
+  <meta property="og:image" content="https://hanwang114-droid.github.io/photo.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1139">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Han Wang seated on a rock overlooking a canyon">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://hanwang114-droid.github.io/",
+    "name": "Han Wang | The New School",
+    "primaryImageOfPage": "https://hanwang114-droid.github.io/photo.jpg",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Han Wang",
+      "url": "https://hanwang114-droid.github.io/",
+      "image": "https://hanwang114-droid.github.io/photo.jpg",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=p2X10fkAAAAJ&hl=en",
+        "https://github.com/hanwang114-droid",
+        "https://orcid.org/0009-0006-3533-6585"
+      ]
+    }
+  }
+  </script>
+
   <style>
     :root {
-      --ink: #15283b;
-      --muted: #526170;
-      --blue: #2459c4;
+      --ink: #000000;
+      --muted: #555555;
+      --accent: #e82e21;
+      --link: #c52218;
       --paper: #ffffff;
-      --tint: #f1f5f9;
-      --line: #dce3ea;
+      --tint: #f5f5f5;
+      --line: #dddddd;
       --width: 1100px;
     }
 
@@ -46,7 +76,7 @@
     }
 
     a {
-      color: var(--blue);
+      color: var(--link);
       text-underline-offset: .22em;
     }
 
@@ -56,7 +86,7 @@
 
     a:focus-visible,
     summary:focus-visible {
-      outline: 3px solid var(--blue);
+      outline: 3px solid var(--accent);
       outline-offset: 5px;
     }
 
@@ -91,26 +121,50 @@
       top: 12px;
     }
 
-    /* Header */
+    /* Header: logo first, name and navigation second */
 
     .site-header {
-      min-height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
+      padding-top: 22px;
       border-bottom: 1px solid var(--line);
     }
 
     .wordmark {
-      color: var(--ink);
-      font-weight: 650;
+      display: block;
+      width: fit-content;
       text-decoration: none;
-      font-size: 1.1rem;
     }
 
-    .wordmark span {
-      color: var(--blue);
+    .wordmark img {
+      display: block;
+      width: 110px;
+      height: auto;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px 28px;
+      margin-top: 20px;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .header-name {
+      color: var(--ink);
+      font-size: 1.1rem;
+      font-weight: 650;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .header-name span {
+      color: var(--accent);
+    }
+
+    .header-name:hover {
+      color: var(--link);
     }
 
     .nav {
@@ -126,7 +180,7 @@
     }
 
     .nav a:hover {
-      color: var(--blue);
+      color: var(--link);
       text-decoration: underline;
     }
 
@@ -141,7 +195,7 @@
     }
 
     .eyebrow {
-      color: var(--blue);
+      color: var(--link);
       font-size: .78rem;
       font-weight: 650;
       letter-spacing: .14em;
@@ -173,8 +227,8 @@
 
     .button {
       display: inline-block;
-      color: white;
-      background: var(--ink);
+      color: var(--ink);
+      background: var(--accent);
       padding: 11px 22px;
       text-decoration: none;
       border-radius: 3px;
@@ -183,7 +237,8 @@
     }
 
     .button:hover {
-      background: var(--blue);
+      background: var(--ink);
+      color: var(--paper);
     }
 
     .hero-links > a:not(.button) {
@@ -193,7 +248,7 @@
     /* Photo and contact details */
 
     .profile {
-      border-left: 2px solid var(--blue);
+      border-left: 2px solid var(--accent);
       padding-left: 30px;
     }
 
@@ -305,8 +360,8 @@
     }
 
     .badge {
-      color: var(--blue);
-      background: #edf3ff;
+      color: var(--ink);
+      background: var(--accent);
       padding: 2px 9px;
       border-radius: 3px;
       font-size: .75rem;
@@ -326,7 +381,7 @@
     }
 
     .paper-title a:hover {
-      color: var(--blue);
+      color: var(--link);
       text-decoration: underline;
     }
 
@@ -377,7 +432,7 @@
     .code-panel {
       background: var(--tint);
       padding: 30px;
-      border-left: 3px solid var(--ink);
+      border-left: 3px solid var(--accent);
     }
 
     .code-panel h3 {
@@ -421,7 +476,7 @@
     }
 
     .profile-link:hover {
-      border-color: var(--blue);
+      border-color: var(--accent);
     }
 
     .profile-link strong {
@@ -477,12 +532,10 @@
         width: calc(100% - 40px);
       }
 
-      .site-header {
-        padding: 22px 0;
-        min-height: auto;
+      .header-row {
         align-items: flex-start;
         flex-direction: column;
-        gap: 14px;
+        gap: 12px;
       }
 
       .nav {
@@ -600,25 +653,42 @@
 
   <div class="wrap">
     <header class="site-header" id="top">
-      <a class="wordmark" href="#top" aria-label="Han Wang, home">
-        Han Wang<span>.</span>
+      <!-- First line: The New School logo -->
+      <a class="wordmark" href="https://www.newschool.edu/">
+        <img
+          src="new-school-logo.png"
+          alt="The New School"
+          width="2560"
+          height="1683"
+        >
       </a>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#code">Code</a>
-        <a href="#profiles">Profiles</a>
-
+      <!-- Second line: name followed by navigation -->
+      <div class="header-row">
         <a
-          href="https://drive.google.com/file/d/1RAUoQX-d5A3fzTe7907nYvF56fMKVozH/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="CV (PDF, opens in a new tab)"
+          class="header-name"
+          href="#top"
+          aria-label="Han Wang, back to top"
         >
-          CV
+          Han Wang<span>.</span>
         </a>
-      </nav>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#code">Code</a>
+          <a href="#profiles">Profiles</a>
+
+          <a
+            href="https://drive.google.com/file/d/1RAUoQX-d5A3fzTe7907nYvF56fMKVozH/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CV (PDF, opens in a new tab)"
+          >
+            CV
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main id="main">
@@ -661,11 +731,10 @@
         </div>
 
         <aside class="profile" aria-label="Academic profile">
-          <!-- Keep photo.jpg in the same folder as index.html. -->
           <img
             class="portrait"
             src="photo.jpg"
-            alt="Seated on a rock overlooking a canyon"
+            alt="Han Wang seated on a rock overlooking a canyon"
             width="1139"
             height="640"
           >
@@ -741,7 +810,6 @@
         </h2>
 
         <div>
-          <!-- Copy an article block to add another publication. -->
           <article class="paper">
             <div class="paper-meta">
               <time datetime="2026">2026</time>
@@ -864,7 +932,7 @@
           </p>
 
           <a href="https://github.com/hanwang114-droid/crop-subsistence-snap-replication">
-            Explore the repository on GitHub
+            GitHub repository
           </a>
         </div>
       </section>
